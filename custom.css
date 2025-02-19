@@ -17,6 +17,22 @@ a {
 	color: #45c084;
 }
 
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+h2 a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  h2 a:hover {
+    color: #45c084; 
+    text-decoration: none; 
+  }
+  
+
 h1 {
     text-align: center;
     margin-top: 1.8em;
@@ -26,6 +42,24 @@ h2 {
     text-align: center;
     font-size: medium;
 }
+
+h2.tribute {
+    text-align: left;
+    font-size: xx-large;
+}
+
+p.tribute a {
+    font-size: normal;
+    color: #000000;
+    text-decoration: none; 
+}
+
+p.tribute a:hover {
+    font-size: normal;
+    color: #45c084; 
+    text-decoration: none;  
+}
+
 
 h3 {
     text-align: left;
@@ -57,13 +91,13 @@ hr {
     padding-right: 1em;
 }
 
-
 .video-container {
-    display: flex; /* Enable flexbox on the container */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically (if needed) */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
 }
+
 video {
     max-width: 100%;
     height: auto;
@@ -79,23 +113,23 @@ figcaption {
     font-style: italic; 
     color: #555;
     padding-top: 0.5em;
-  }
+}
 
 .button-main {
     display: inline-block;
-    background-color: white; /* Changed to white */
-    color: black; /* Changed to black */
+    background-color: white; 
+    color: black; 
     padding: 10px 20px;
     text-decoration: none;
-    border: 2px solid black; /* Added black border */
+    border: 2px solid black; 
     border-radius: 1px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for both background and color */
+    transition: background-color 0.3s ease, color 0.3s ease; 
     font-weight: 600;
 
 }
 
 .button-main:hover {
-    background-color: #bdbdbd; /* Darker background on hover */
+    background-color: #bdbdbd; 
   }
 
 
@@ -107,17 +141,20 @@ figcaption {
 	font-size: 18px;
 }
 
+.pure-menu-link:hover {
+	color: rgb(255, 255, 255);
+}
+
+
 .pure-menu-selected  {
     color: rgb(255, 255, 255);
 
 }
 
-
 .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
     background-color: #000000;
 
 }
-
 
 .custom-wrapper {
     background-color: #000000;
@@ -212,6 +249,10 @@ figcaption {
 
     figcaption {
         font-size: smaller;
+    }
+
+    h2.tribute {
+        font-size: x-large;
     }
 
 }
