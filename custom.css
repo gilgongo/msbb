@@ -1,0 +1,238 @@
+
+/*
+* { 
+    outline: 1px solid red;
+    outline-offset: -1px;
+  }
+*/
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    line-height: 2em;
+    background-color: #000000;
+}
+
+a {
+	color: #45c084;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1.8em;
+}
+
+h2 {
+    text-align: center;
+    font-size: medium;
+}
+
+h3 {
+    text-align: left;
+    font-size: medium;
+}
+
+.comment-date {
+    text-align: left;
+    font-size: smaller;
+}
+
+hr {
+    width: 15%; 
+    border: 1px solid #e5e5e5;
+}
+
+.container {
+	max-width: 70em; 	
+	margin: 1em auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+.comments {
+    width: 85%; 	
+	margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.video-container {
+    display: flex; /* Enable flexbox on the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    max-width: 100%;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.l-box {
+	margin-left: 2em;
+    margin-right: 2em;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic; 
+    color: #555;
+    padding-top: 0.5em;
+  }
+
+.button-main {
+    display: inline-block;
+    background-color: white; /* Changed to white */
+    color: black; /* Changed to black */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid black; /* Added black border */
+    border-radius: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for both background and color */
+    font-weight: 600;
+
+}
+
+.button-main:hover {
+    background-color: #bdbdbd; /* Darker background on hover */
+  }
+
+
+
+/* This is used for the header */
+
+.pure-menu-link {
+	color: rgb(225, 220, 220);
+	font-size: 18px;
+}
+
+.pure-menu-selected  {
+    color: rgb(255, 255, 255);
+
+}
+
+
+.pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+    background-color: #000000;
+
+}
+
+
+.custom-wrapper {
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    height: 5em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    z-index: 2;
+}
+
+.custom-wrapper.open {
+    height: 19em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+@media (max-width: 47.999em) {
+
+    h1 {
+        text-align: center;
+        font-size: 23px;
+        line-height: 1.5em;
+    }
+
+    .custom-menu-3 {
+        text-align: right;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+    .comments {
+        width: 100%; 	
+        margin: 0 0;
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    figcaption {
+        font-size: smaller;
+    }
+
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+    background-color: #020202;
+    position: relative
+    bottom: 0;
+    color: rgb(179, 177, 177);
+    font-size: smaller;
+    width: 100%;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 1em;    
+
+}
+
+.footerlink { 
+    color: #f2f1f1; 
+    text-decoration: none;
+}
+
