@@ -10,7 +10,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
-    line-height: 2em;
+    line-height: 1.8em;
     background-color: #000000;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
@@ -50,6 +50,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: large;
+    font-weight: 400;
 }
 
 h2.tribute {
@@ -67,6 +68,10 @@ p.tribute a:hover {
     font-size: normal;
     color: #45c084; 
     text-decoration: none;  
+}
+
+strong {
+    font-weight: 600;
 }
 
 .boxout {
@@ -155,6 +160,9 @@ figcaption {
 .pure-menu-link {
 	color: rgb(225, 220, 220);
 	font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
 
 .pure-menu-link:hover {
