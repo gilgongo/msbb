@@ -6,11 +6,17 @@
   }
 */
 
+
 body {
     overflow-x: hidden;
     width: 100%;
     line-height: 2em;
     background-color: #000000;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
 }
 
 a {
@@ -36,11 +42,14 @@ h2 a {
 h1 {
     text-align: center;
     margin-top: 1.8em;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 h2 {
     text-align: center;
-    font-size: medium;
+    font-size: large;
 }
 
 h2.tribute {
@@ -60,6 +69,13 @@ p.tribute a:hover {
     text-decoration: none;  
 }
 
+.boxout {
+    border: 2px dashed lightgray; 
+    align: center;
+    padding-left: 2em; 
+    padding-right: 2em; 
+    box-sizing: border-box; 
+}
 
 h3 {
     text-align: left;
@@ -230,6 +246,12 @@ figcaption {
         line-height: 1.5em;
     }
 
+    h2 {
+        text-align: center;
+        font-size: large;
+        font-weight: 700;
+    }
+
     .custom-menu-3 {
         text-align: right;
     }
@@ -254,6 +276,10 @@ figcaption {
     h2.tribute {
         font-size: x-large;
     }
+
+    .boxout {
+        padding: 1em;
+      }
 
 }
 
