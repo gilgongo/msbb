@@ -47,6 +47,12 @@ h1 {
     font-style: normal;
 }
 
+h1.tribute {
+    text-align: left;
+    font-size: xx-large;
+    font-family: "Inter", serif;
+}
+
 h2 {
     text-align: center;
     font-size: large;
@@ -76,11 +82,31 @@ strong {
 
 .boxout {
     border: 2px dashed lightgray; 
+    border-radius: 5px;
     align: center;
     padding-left: 2em; 
     padding-right: 2em; 
     box-sizing: border-box; 
+    margin-top: 3em;
+    margin-bottom: 5em;
+    position: relative;
 }
+
+.icon-container {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; 
+    padding: 0 10px; 
+  }
+
+  .border-icon {
+    width: 40px; 
+    height: 40px; 
+    display: block;
+  }
+
 
 h3 {
     text-align: left;
@@ -163,7 +189,10 @@ figcaption {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 500;
+
 }
+
+
 
 .pure-menu-link:hover {
 	color: rgb(255, 255, 255);
@@ -172,7 +201,7 @@ figcaption {
 
 .pure-menu-selected  {
     color: rgb(255, 255, 255);
-
+    border-bottom: 1px solid rgb(135, 135, 135);
 }
 
 .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
